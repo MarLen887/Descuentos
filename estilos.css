@@ -72,7 +72,6 @@ header img{
     width: 1000px;
     height: auto;
     margin-top: 50px;
-    margin-left: 50px;
     max-width: fit-content;
 }
 .carrusel{
@@ -191,8 +190,9 @@ img{
 .tabla{
     margin-bottom: 50px;
     margin-top: 30px;
-    width: 1500px !important;
+    width: 100% !important;
     height: auto;
+    text-align: justify;
 }
 .tabla :hover{
     background: #e0b0ff;
@@ -202,4 +202,23 @@ img{
     display: grid;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width:280px) and (max-width: 653px){
+    .tabla{
+        width: 20%;
+        font-size: 10px;
+        justify-content: center;
+        text-align: justify;
+    }
+    .seccion5{
+        width: 40%;
+        height: auto;
+        display: grid;
+        margin-left: 80px;
+    }
+    .box img{
+        width: 20px;
+        height: auto;
+    }
 }
